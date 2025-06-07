@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       title: "AI-Powered E-Commerce Platform",
       description: "A next-generation e-commerce solution with AI recommendations, real-time analytics, and seamless payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "TensorFlow", "AWS"],
+      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
       github: "https://github.com/yourusername/ai-ecommerce",
       live: "https://ai-ecommerce-demo.com",
       image: "🛒",
