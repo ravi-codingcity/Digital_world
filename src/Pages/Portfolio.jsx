@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import Header from '../components/Header.jsx'
+import Header from '../Components/Header.jsx'
 import About from '../components/About.jsx'
 import Experience from '../components/Experience.jsx'
 import Technologies from '../components/Technologies.jsx'
