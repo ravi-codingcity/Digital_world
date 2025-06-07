@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Header from '../Components/Header.jsx'
-import About from '../components/About.jsx'
-import Experience from '../components/Experience.jsx'
-import Technologies from '../components/Technologies.jsx'
-import Projects from '../components/Projects.jsx'
-import Contact from '../components/Contact.jsx'
-import Footer from '../components/Footer.jsx'
+import About from '../Components/About.jsx'
+import Experience from '../Components/Experience.jsx'
+import Technologies from '../Components/Technologies.jsx'
+import Projects from '../Components/Projects.jsx'
+import Contact from '../Components/Contact.jsx'
+import Footer from '../Components/Footer.jsx'
 
 function Portfolio() {
   const [isLoading, setIsLoading] = useState(true)
