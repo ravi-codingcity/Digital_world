@@ -14,7 +14,7 @@ const Experience = () => {
         "Mentored 5 junior developers and established coding standards",
         "Led successful migration of legacy systems to modern stack"
       ],
-      technologies: ["React", "Node.js", "AWS", "MongoDB", "TypeScript", "Docker", "Kubernetes"],
+      technologies: ["React", "Node.js", "AWS", "MongoDB", "TypeScript", "Docker"],
       type: "Full-time",
       icon: "🚀"
     },
