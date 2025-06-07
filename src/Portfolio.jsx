@@ -85,7 +85,7 @@ function Portfolio() {
             <div className="text-cyan-400 mb-6 font-mono text-lg">
               <span className="text-pink-400">dev</span>
               <span className="text-white">@</span>
-              <span className="text-cyan-400">ravichaudhary</span>
+              <span className="text-cyan-400">ravi_chaudhary</span>
               <span className="text-white">:</span>
               <span className="text-purple-400">~</span>
               <span className="text-white">$ </span>
@@ -222,20 +222,64 @@ function Portfolio() {
 
       {/* Cyberpunk Scroll Button */}
       <motion.button
-        className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white p-4 rounded-lg border border-cyan-400 shadow-lg transition-all duration-300 z-50 group"
+        className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white p-4 rounded-lg border border-cyan-400 shadow-lg z-50 group overflow-hidden"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         whileHover={{ 
-          scale: 1.1, 
-          boxShadow: "0 0 30px rgba(0, 255, 255, 0.5)",
+          scale: 1.1,
+          y: -5,
+          boxShadow: "0 0 30px rgba(0, 255, 255, 0.5), 0 0 60px rgba(0, 255, 255, 0.3)",
+          borderColor: "rgba(0, 255, 255, 0.8)"
         }}
-        whileTap={{ scale: 0.9 }}
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.5 }}
+        whileTap={{ 
+          scale: 0.95,
+          y: 0
+        }}
+        initial={{ opacity: 0, y: 100, scale: 0.5 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ 
+          delay: 1, 
+          duration: 0.6,
+          type: "spring",
+          stiffness: 300,
+          damping: 20
+        }}
+        style={{
+          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+        }}
       >
-        <svg className="w-6 h-6 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+        {/* Background glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        
+        {/* Icon */}
+        <motion.svg 
+          className="w-6 h-6 relative z-10" 
+          fill="currentColor" 
+          viewBox="0 0 24 24"
+          whileHover={{ 
+            y: -2,
+            rotate: [0, -5, 5, 0]
+          }}
+          transition={{ 
+            duration: 0.4,
+            ease: "easeInOut"
+          }}
+        >
           <path d="M7 14l5-5 5 5z"/>
-        </svg>
+        </motion.svg>
+        
+        {/* Pulse effect */}
+        <motion.div
+          className="absolute inset-0 rounded-lg border border-cyan-400"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.5, 0, 0.5],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
       </motion.button>
 
       {/* Enhanced Animations */}

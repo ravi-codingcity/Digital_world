@@ -173,7 +173,7 @@ const About = () => {
               className="flex flex-wrap gap-3"
               variants={itemVariants}
             >
-              {["React", "Node.js", "Illustrator", "Photoshop", "AWS", "Express.js"].map(
+              {["React.js", "Node.js", "Express.js", "Mongo DB", "Illustrator", "Photoshop",].map(
                 (tech, index) => (
                   <motion.span
                     key={tech}
