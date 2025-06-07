@@ -29,7 +29,7 @@ const Experience = () => {
         "Reduced page load times by 50% through optimization",
         "Implemented automated testing increasing code coverage to 95%"
       ],
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker", "Django", "GraphQL"],
+      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker",],
       type: "Full-time",
       icon: "💻"
     },
@@ -44,7 +44,7 @@ const Experience = () => {
         "Improved mobile performance by 45%",
         "Established frontend architecture standards"
       ],
-      technologies: ["JavaScript", "React", "SASS", "Webpack", "Jest"],
+      technologies: ["JavaScript", "React", "SASS", "Webpack"],
       type: "Full-time",
       icon: "🎨"
     },

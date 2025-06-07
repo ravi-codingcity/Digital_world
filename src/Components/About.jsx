@@ -41,7 +41,7 @@ const About = () => {
       id="about"
       className="min-h-screen flex items-center py-20 relative overflow-hidden"
     >
-      {/* Background Effects */}
+      {/* Background Effects   */}
       <div className="absolute inset-0">
         {/* Data streams */}
         {[...Array(8)].map((_, i) => (
