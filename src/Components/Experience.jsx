@@ -5,61 +5,51 @@ const Experience = () => {
   const experiences = [
     {
       title: "Full Stack Developer",
-      company: "TechNova Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Led a team of 8 developers in architecting and deploying microservices-based applications. Implemented CI/CD pipelines reducing deployment time by 60%. Spearheaded migration to cloud-native architecture serving 1M+ users.",
+      company: "OmTrans Logistics",
+      location: "New Delhi, India",
+      period: "2023 - Present",
+      description: "It is an International Logistics Company and I am handling Graphics Designing and Full Stack Development. I have created a completely new MERN stack site and software for the company and optimized performance while managing the database.",
       achievements: [
-        "Increased system performance by 40% through optimization",
-        "Mentored 5 junior developers and established coding standards",
-        "Led successful migration of legacy systems to modern stack"
+        "Created a new MERN stack site from scratch.",
+        "Optimized performance, reducing load times by 40%.",
+        "Developed Pricing MERN stack software.",
+        "Managed and optimized MongoDB database for scalability.",
+        "Designed social media creatives to enhance brand presence.",
+        "Video editing and animations for marketing campaigns.",
       ],
-      technologies: ["React", "Node.js", "AWS", "MongoDB", "TypeScript", "Docker"],
+      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Premiere Pro", "After Effects", "Photoshop", "Illustrator"],
       type: "Full-time",
       icon: "🚀"
     },
     {
-      title: "Full Stack Developer",
-      company: "InnovateLab",
-      location: "Remote",
-      period: "2020 - 2022",
-      description: "Developed and maintained 15+ client projects ranging from e-commerce platforms to SaaS applications. Collaborated with cross-functional teams to deliver pixel-perfect, responsive web applications.",
+      title: "Frontend Developer",
+      company: "The Exam Guru",
+      location: "New Delhi, India",
+      period: "2022 - 2023",
+      description: "It is an Institute of provides courses for Competitive exams and I am working as a Graphics and Web designer. Here,. I have built multiple company websites from scratch maintained the online data and also did SEO optimization on their website.",
       achievements: [
-        "Built 3 award-winning web applications",
-        "Reduced page load times by 50% through optimization",
-        "Implemented automated testing increasing code coverage to 95%"
+        "Developed multiple company websites from scratch maintained the online database.",
+        "Improved mobile performance by 45% through responsive design.",
+        "SEO Optimization led to 30% increase in organic traffic.",
+        "Designed social media creatives to enhance brand presence.",
+        "Video editing and animations for marketing campaigns.",
       ],
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker",],
+      technologies: ["JavaScript", "React", "Tailwind CSS", "HTML5", "CSS3", "Photoshop", "Illustrator", "Corel Draw"],
       type: "Full-time",
       icon: "💻"
     },
     {
-      title: "Frontend Developer",
-      company: "PixelCraft Studios",
-      location: "New York, NY",
-      period: "2019 - 2020",
-      description: "Specialized in creating interactive user interfaces and animations. Worked closely with UX designers to implement responsive designs that increased user engagement by 35%.",
+      title: "Graphics and Web Designer",
+      company: "Techtra Digital",
+      location: "New Delhi, India",
+      period: "2020 - 2022",
+      description: "It is a digital marketing agency.",
       achievements: [
-        "Developed component library used across 10+ projects",
-        "Improved mobile performance by 45%",
-        "Established frontend architecture standards"
+        "Delivered many client national and international websites on time.",
+        "Designed and launched 50+ websites with a focus on user experience.",
+        "Achieved 98% client satisfaction rate."
       ],
-      technologies: ["JavaScript", "React", "SASS", "Webpack"],
-      type: "Full-time",
-      icon: "🎨"
-    },
-    {
-      title: "Junior Web Developer",
-      company: "StartupHub",
-      location: "Austin, TX",
-      period: "2018 - 2019",
-      description: "Started my professional journey building responsive websites and learning modern development practices. Contributed to open-source projects and gained experience in agile development.",
-      achievements: [
-        "Delivered 20+ client websites on time",
-        "Contributed to 5 open-source projects",
-        "Achieved 98% client satisfaction rate"
-      ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Shopify", "Tailwind CSS", "Photoshop", "Illustrator", "Corel Draw"],
       type: "Full-time",
       icon: "🌱"
     }
@@ -118,7 +108,7 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <motion.h2 
             className="text-4xl lg:text-6xl font-bold mb-6"
@@ -177,7 +167,7 @@ const Experience = () => {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="bg-black/60 backdrop-blur-sm border border-gray-700 hover:border-cyan-400/50 rounded-xl p-5 transition-all duration-300 shadow-2xl">
+                <div className="bg-black/60 backdrop-blur-sm border border-gray-700 hover:border-cyan-400/50 rounded-xl p-4 transition-all duration-300 shadow-2xl">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center">
@@ -201,7 +191,7 @@ const Experience = () => {
                   </div>
 
                   {/* Meta Info */}
-                  <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-400">
+                  <div className="flex flex-wrap gap-4 mb-3 text-sm text-gray-400">
                     <div className="flex items-center">
                       <span className="mr-1">📅</span>
                       {exp.period}
@@ -213,7 +203,7 @@ const Experience = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-300 mb-4 leading-relaxed" style={{ fontFamily: 'Rajdhani, sans-serif' }}>
+                  <p className="text-gray-300 mb-3 leading-relaxed" style={{ fontFamily: 'Rajdhani, sans-serif' }}>
                     {exp.description}
                   </p>
 
@@ -235,7 +225,7 @@ const Experience = () => {
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-white font-semibold mb-3 flex items-center">
+                    <h4 className="text-white font-semibold mb-2 flex items-center">
                       <span className="mr-2">⚡</span>
                       Technologies
                     </h4>

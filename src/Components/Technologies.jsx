@@ -316,7 +316,7 @@ const Technologies = () => {
               icon: "⚡",
             },
             { label: "Years Experience", value: "4+", icon: "⏰" },
-            { label: "Projects Built", value: "100+", icon: "🚀" },
+            { label: "Projects Built", value: "60+", icon: "🚀" },
             { label: "Lines of Code", value: "100K+", icon: "💻" },
           ].map((stat, index) => (
             <motion.div

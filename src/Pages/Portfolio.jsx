@@ -114,7 +114,7 @@ function Portfolio() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  ✓ Loading neural networks...
+                  ✓ Loading mern networks...
                 </motion.div>
                 <motion.div 
                   className="text-purple-300"
