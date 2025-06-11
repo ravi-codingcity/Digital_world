@@ -1,4 +1,4 @@
-# 💼 My Developer Portfolio
+# 💼 Portfolio
 
 🚀 Just launched my new **developer portfolio** — built with **React.js** and styled using **Tailwind CSS**!
 
